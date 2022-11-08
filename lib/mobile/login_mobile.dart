@@ -13,21 +13,23 @@ class _LoginMobileState extends State<LoginMobile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xfff0f1f5),
-      body: Center(
-        child: Container(
-          margin: const EdgeInsets.all(30),
-          child: Wrap(
-            alignment: WrapAlignment.center,
-            crossAxisAlignment: WrapCrossAlignment.center,
-            direction: Axis.horizontal,
-            children: const [
-              LogoLogin(),
-              FormLogin(),
-            ],
+        backgroundColor: const Color(0xfff0f1f5),
+        body: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: 600, minWidth: 350),
+          child: Center(
+            child: Container(
+              margin: const EdgeInsets.all(30),
+              child: Wrap(
+                alignment: WrapAlignment.center,
+                crossAxisAlignment: WrapCrossAlignment.center,
+                direction: Axis.horizontal,
+                children: const [
+                  LogoLogin(),
+                  FormLogin(),
+                ],
+              ),
+            ),
           ),
-        ),
-      ),
-    );
+        ));
   }
 }

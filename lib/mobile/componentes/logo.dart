@@ -9,12 +9,6 @@ class LogoLogin extends StatefulWidget {
 
 class _LogoLoginState extends State<LogoLogin> {
   @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     var mediaQuery = MediaQuery.of(context).size;
     return ConstrainedBox(
